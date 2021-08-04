@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz App | JS OOP</title>
+  </head>
+  <body>
+    <div class="final" style="display: none">
+      <h2>You answered all questions</h2>
+      <p class="score"></p>
+      <h4>Try again</h4>
+      <button id="again">again</button>
+    </div>
+
+    <div class="quiz"
+      <div class="count">
+        <p class="current">0</p>
+        <p class="">/</p>
+        <p class="total"></p>
+      </div>
+
+      <h3 id="questions"></h3>
+      <div id ="allAnswers">
+        <label id="a1" class="container"></label>
+        <label id="a2" class="container"></label>
+        <label id="a3" class="container"></label>
+        <label id="a4" class="container"></label>
+      </div>
+
+
+      <button id="next">Submit</button>
+    </div>
+    <div class="settings">
+      <h2>Quiz Setting</h2>
+      <label for="category">Select Category</label>
+      <select class="" id="category">
+        <option value="9">General Knowledge</option>
+        <option value="27">Animals</option>
+        <option value="23">History</option>
+        <option value="9">Sports</option>
+      </select>
+
+      <div>
+        <label for="difficulty">Difficulty</label>
+
+        <label for="easy">
+          <input type="radio" id="easy" name="diff">
+          Easy
+        </label>
+
+        <label for="medium">
+          <input type="radio" id="medium" name="diff">
+          Medium
+        </label>
+
+        <label for="hard">
+          <input type="radio" id="hard" name="diff">
+          Hard
+        </label>
+      </div>
+
+
+      <div>
+        <label for="questionsNum">Number of Questions</label>
+        <input type="number" id="questionsNum">
+      </div>
+
+      <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
